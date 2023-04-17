@@ -1,0 +1,195 @@
+Unit 4.Else if
+
+Q.1
+슬기는 체육 선생님과 공던지기로 아이스크림 내기를 하게 됐다.
+
+ 
+
+공을 던져서 50m ~ 60m 사이에 공이 들어가면 슬기가 이기게 되고, 그 외에 공이 떨어지면 체육선생님이 이기게 룰을 정했다.
+
+ 
+
+슬기가 던진 공의 위치가 입력으로 주어지면 50이상 60이하이면 "win"을 출력하고, 그 외에는 "lose"를 출력하시오.
+
+
+#include <stdio.h>
+
+int main()
+{
+    float a;
+    scanf("%f",&a);
+    if(a>=50)
+    {
+        if(a<=60) 
+        {
+            printf("win");
+        }
+        else{
+            printf("lose");
+        }
+    }
+    else
+    {
+        printf("lose");
+    }
+}
+
+
+Q.2
+
+점수(정수, 0 ~ 100)를 입력받아 평가를 출력해보자.
+
+
+평가 기준
+점수 범위 : 평가
+ 90 ~ 100 : A
+ 70 ~   89 : B
+ 40 ~   69 : C
+   0 ~   39 : D
+로 평가되어야 한다.
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a<=100&&a>=90)
+    {
+        printf("A");
+    }
+    else if(a<=89&&a>=70)
+    {
+        printf("B");
+    }
+    else if(a<=69&&a>=40)
+    {
+        printf("C");
+    }
+    else
+    {
+        printf("D");
+    }
+}
+
+
+
+
+Q.3 정수 하나를 입력받아 양수이면 "양수", 음수이면 "음수", 0이면 0을 출력하시오.
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a>0)
+    {
+        printf("양수");
+    }
+    else if(a<0)
+    {
+        printf("음수");
+    }
+    else
+    {
+        printf("0");
+    }
+}
+
+
+
+
+
+
+
+Q.4.
+윷놀이는 4개의 윷을 이용하는 게임이다.
+
+ 
+도 : 1개가 뒤집어진 상태
+
+개 : 2개가 뒤집어진 상태
+
+걸 : 3개가 뒤집어진 상태
+
+윷 : 4개가 뒤집어진 상태
+
+모 : 하나도 뒤집어지지 않은 상태
+
+
+
+4개의 윷 상태가 입력되면 도, 개, 걸, 윷, 모를 출력하는 프로그램을 작성하시오.
+입력예시 
+0 0 1 0
+출력 예시
+도
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    if(a+b+c+d==0) printf("모");
+    else if(a+b+c+d==1) printf("도");
+    else if(a+b+c+d==2) printf("개");
+    else if(a+b+c+d==3) printf("걸");
+    else if(a+b+c+d==4) printf("윷");
+}
+
+
+
+
+Q.5
+두 자연수 a, b가 주어진다.
+
+b가 a의 배수이면 "a*x=b"를 출력하고,
+
+a가 b의 배수이면 "b*x=a"를 출력하고,
+
+배수관계가 아니면 "none"을 출력하시오.
+
+예) 
+
+5 10    ====> 5*2=10
+
+14 2   ======> 2*7=14
+
+3 7 =====> none
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(b%a==0)
+    {
+        printf("%d*%d=%d",a,b/a,b);
+    }
+    else if(a%b==0)
+    {
+        printf("%d*%d=%d",b,a/b,a);
+    }
+    else
+    {
+        printf("none");
+    }
+}
+
+
+
+
+
+
+
+
+
+
