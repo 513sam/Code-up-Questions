@@ -1,3 +1,147 @@
+
+	1~10 출력 
+#include <stdio.h>
+
+int main()
+{	
+	for(int i=1;i<=10;i++)
+	{
+		printf("%d ",i);
+	}
+	
+	1~ a 출력 
+#include <stdio.h>
+
+int main()
+{	
+	int a;
+	scanf("%d",&a);
+	for(int i=1;i<=a;i++)
+	{
+		printf("%d ",i);
+	}
+	 홀수 출 력 
+#include <stdio.h>
+
+int main()
+{	
+	for(int i=1;i<=20;i++)
+	{
+		if(i%2!=0)
+		{
+			printf("%d ",i);
+		} 
+	}
+	
+1 ~ 100 합계
+
+#include <stdio.h>
+
+int main()
+{	
+
+	int s = 0; 
+	for(int i=1;i<=100;i++)
+	{
+		s+=i;
+	}
+	printf("%d",s);
+
+
+	do while 구문 구구단 
+#include <stdio.h>
+
+int main()
+{
+	int a,i;
+	i = 1;
+	scanf("%d",&a);
+	do
+	{
+		printf("%d*%d=%2d\n",a,i,a*i);
+		i++;
+	}while(i<10);
+	
+	for구문 2단 출력
+	
+	for(int i=1;i<=9;i++)
+	{
+		printf("2*%d=%2d\n",i,2*i);
+	}
+	
+	
+	for 구문 구구단 선택 출력
+#include <stdio.h>
+
+int main()
+{	 
+	int a;
+	scanf("%d",&a);
+	for(int i=1;i<=9;i++)
+	{
+		printf("%d*%d=%2d\n",a,i,a*i);
+	}
+
+
+	배수의 합 출력하기 음이아닌 정수 a b n 이 입력 되었을때 n 보다 작은 a 또는 b의 배수의 합을 출력하는 프로그램을 작성해보자
+
+
+#include <stdio.h>
+
+int main()
+{
+	int a,b,n,s = 0;
+	
+	scanf("%d %d %d",&a,&b,&n);
+	for(int i=1;i<n;i++)
+	{
+		if(i%a==0||i%b==0)
+		{
+			s+=i;
+		}
+	}
+	printf("%d",s);
+}
+
+A~B 까지 출력
+
+
+#include <stdio.h>
+
+int main(){
+	int a,b;
+	scanf("%d %d",&a,&b);
+	do
+	{
+		printf("%d ",a);
+		a++;
+	}while(a<=b);
+}
+
+3의 배수
+
+
+#include <stdio.h>
+
+int main(){
+	int a,i;
+	i=1;
+	scanf("%d",&a);
+	do
+	{
+		if(i%3==0)
+		{
+			printf("%d ",i);
+		}
+		
+		i++;
+	}while(i<=a);
+}
+
+
+
+
+
 Unit 4.Else if
 
 Q.1
