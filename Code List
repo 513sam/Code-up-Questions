@@ -1,38 +1,98 @@
+6강 반복문.
 
-	1~10 출력 
-#include <stdio.h>
-
-int main()
-{	
-	for(int i=1;i<=10;i++)
-	{
-		printf("%d ",i);
-	}
+	1~ a 정수 출력 1
 	
-	1~ a 출력 
+	
+	
+	
 #include <stdio.h>
 
 int main()
 {	
 	int a;
 	scanf("%d",&a);
-	for(int i=1;i<=a;i++)
+	while(a!=0)
 	{
-		printf("%d ",i);
+		printf("%d\n",a);
+		a = a - 1;
 	}
-	 홀수 출 력 
+}
+
+
+
+	 1~ a 정수 출력 2 = 카운트 다운 
+	 
+	 
+	 
+	 
 #include <stdio.h>
 
 int main()
 {	
-	for(int i=1;i<=20;i++)
+	int a;
+	scanf("%d",&a);
+	while(a>0)
 	{
-		if(i%2!=0)
-		{
-			printf("%d ",i);
-		} 
+		a = a - 1;
+		printf("%d\n",a);
+		
 	}
+}
+
+
+3 번 a ~ CHAR 까지 출력
 	
+#include <stdio.h>
+
+int main()
+{	
+	int a;
+	scanf("%c",&a);
+	while(a>96)
+	{
+		printf("%c ",a);
+		a = a - 1;
+		
+	}
+}
+
+4번 입력 받은 수까지의 짝수들의 합 구하기
+
+#include <stdio.h>
+
+int main()
+{	
+
+	int s,a = 0; 
+	scanf("%d",&a);
+	for(int i=1;i<=a;i++)
+	{
+		if (i%2==0) s+=i;
+	}
+	printf("%d",s);
+}
+
+5번 입력받은갯수 입력 받고 최댓값
+
+#include <stdio.h>
+
+int main()
+{	
+	int m,a,input = 0; 
+	scanf("%d\n",&a);
+	for(int i=1;i<a;i++)
+	{
+		scanf("%d",&input);
+		if (m<=input)
+		{
+			m=input;
+		}
+	}
+	printf("%d",m);
+}
+
+
+
 1 ~ 100 합계
 
 #include <stdio.h>
